@@ -47,13 +47,12 @@ class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule 
 
 	public function init() {
 		$this->addHookAfter('Pages::setupNew', $this, 'HookPagesSetupNew');
-		// prepare config data
 		$s = str_replace(array("\r\n","\r"), "\n", trim($this->sort_reverse));
 		$tmp = explode("\n",$s);
 		$reverses = array();
 		foreach($tmp as $v) {
 			if(''==trim($v)) continue;
-			$a = explode(',', $v);
+			$a = explode(',', trim($v));
 			foreach($a as $key=>$val) $a[$key] = trim($val);
 			$reverses[$a[0]] = isset($a[1]) ? $a[1] : '';
 		}
