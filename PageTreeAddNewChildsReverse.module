@@ -22,7 +22,7 @@ class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule 
 			'title' => 'Pagetree Add New Childs Reverse',
 			'version' => 100,
 			'summary' => "New Pages in Descending Sortorder (newest first) while sortmode is Manual Drag-n-Drop",
-			'href' => '',
+			'href' => 'http://mods.pw/5g',
 			'author' => 'horst',
 			'singular' => true,
 			'autoload' => true
