@@ -44,7 +44,8 @@ It works with **manually created pages**, with pages created via the **API**, al
 
 Download the module into your site/modules/ directory and install it. In the config page you find a single textarea field. 
 Here you can enter the templatename or page-ID of the parent which children should get reverse added, - optionaly followed by a colon and the child-templatename if you need a more precise selector. 
-You can add as many parents as you like, but only one on each line and in this format: TEMPLATE or PAGEID[,CHILDTEMPLATE]. 
+You can add as many parents as you like, but only one on each line and in this format: 
+TEMPLATE-NAME or PAGE-ID[,CHILDTEMPLATE-NAME].
 
 A few examples: 
 ```
