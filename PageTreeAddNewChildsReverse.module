@@ -68,10 +68,8 @@ class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule 
 			if(is_numeric($treeRoot) && $page->parent->id != intval($treeRoot)) {
 				continue;
 			}
-			elseif(! is_numeric($treeRoot)) {
-				if($page->parent->template->name != $treeRoot) {
-					continue;
-				}
+			if(! is_numeric($treeRoot) && $page->parent->template->name != $treeRoot) {
+				continue;
 			}
 			if(! empty($childTemplate) && $childTemplate != $page->template) {
 				continue;
