@@ -15,22 +15,25 @@
 
 class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule {
 
-	private $startvalue = 999999999;
+	const permanentValue = "";
 
+	private $startvalue = 999999999;
+	
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'Pagetree Add New Childs Reverse',
-			'version' => 100,
+			'version' => 101,
 			'summary' => "New Pages in Descending Sortorder (newest first) while sortmode is Manual Drag-n-Drop",
 			'href' => 'http://mods.pw/5g',
 			'author' => 'horst',
 			'singular' => true,
-			'autoload' => true
+			'autoload' => true,
+			#'permanent' => true
 		);
 	}
 
 	public static function getModuleConfigInputfields(array $data) {
-		if(! isset($data['sort_reverse'])) $data['sort_reverse'] = '';
+		if(! isset($data['sort_reverse']) || empty($data['sort_reverse'])) $data['sort_reverse'] = self::permanentValue;
 		$fields = new InputfieldWrapper();
 		$f = wire('modules')->get('InputfieldTextarea');
 		$f->attr('name', 'sort_reverse');
