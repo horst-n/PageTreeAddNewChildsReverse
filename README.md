@@ -57,12 +57,14 @@ posts,post
 You want set your template(s) sortfield(s) to 'Manual drag-n-drop' if not have done allready.
  
 #### ATTENTION
-You need to setup the **TreeParent and the module config** when there are **no children** in it! 
-Otherwise it will not work!
+You need to setup the **TreeParent and the module config** when there are **no children in it**! Otherwise it will not work!
 
-Also disabling the module once you have added childs and then only add one new page to it will mess up all.
-
-You may think about to install the module as permanent in critical situations.
+Also disabling the module once you have added childs and then add one new pages to it will mess up all!
+(You may think about to install the module as permanent in critical situations.?! see below ->)
 
 Per default you are limited to 1.000.000.000 childpages, but you may increase it if you need :)
+
+
+
+#### [ProcessWire forums thread of this module](http://processwire.com/talk/topic/4758-release-pagetree-add-new-childs-reverse/ "go to the ProcessWire forums thread of this module")
 
