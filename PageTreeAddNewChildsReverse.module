@@ -58,6 +58,10 @@ class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule 
 		$this->treeRoots = $reverses;
 	}
 
+	public function getTreeRoots() {
+		return isset($this->treeRoots) && is_array($this->treeRoots) ? $this->treeRoots : array();
+	}
+	
 	public function HookPagesSetupNew($event) {
 		$page = $event->arguments[0];
 		if(! in_array($page->parent->template->name, array_keys($this->treeRoots)) && ! in_array($page->parent->id, array_keys($this->treeRoots))) {
