@@ -9,15 +9,8 @@
  * Licensed under GNU/GPL v2, see LICENSE.TXT
  *
  * http://www.processwire.com
- * http://www.ryancramer.com
  *
  */
-
-
-/**
-*  $Source: /PW-SITES/pwtest.nogajski.de/htdocs/site/modules/PageTreeAddNewChildsReverse/PageTreeAddNewChildsReverse.module,v $
-*  $Id: PageTreeAddNewChildsReverse.module,v 1.5 2013/10/18 22:04:24 horst Exp $
-*/
 
 class PageTreeAddNewChildsReverse extends Process implements ConfigurableModule {
 
